@@ -1,7 +1,7 @@
 name: flutter_restaurant
-description: A new Flutter restaurant application.
+description: A new Flutter meat application.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
-version: 1.0.2+3
+version: 1.1.6+6
 
 environment:
   sdk: '>=2.12.0 <3.0.0'

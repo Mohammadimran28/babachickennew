@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.u6amtech.flutter_restaurant">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.baba.chicken">
     <!-- io.flutter.app.FlutterApplication is an android.app.Application that
          calls FlutterMain.startInitialization(this); in its onCreate method.
          In most cases you can leave this as-is, but you if you want to provide
@@ -26,7 +26,7 @@
 
     </queries>
 
-    <application android:label="Baba Chicken 2.0" android:requestLegacyExternalStorage="true" android:usesCleartextTraffic="true" android:icon="@mipmap/ic_launcher"> android:allowBackup="false" android:fullBackupOnly="false"
+    <application android:label="Baba Chicken" android:requestLegacyExternalStorage="true" android:usesCleartextTraffic="true" android:icon="@mipmap/ic_launcher"> android:allowBackup="false" android:fullBackupOnly="false"
         <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCZEtwth0PxdMKjFjbS-ezTtESdXaNlrAE"/>
 
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" />

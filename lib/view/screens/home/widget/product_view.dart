@@ -63,7 +63,7 @@ class ProductView extends StatelessWidget {
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     physics: const BouncingScrollPhysics(),
-                    itemCount: 2,
+                    itemCount: 3,
                     itemBuilder: (context, index) {
                       return Container(
                         padding: const EdgeInsets.symmetric(
@@ -133,7 +133,7 @@ class ProductView extends StatelessWidget {
                           crossAxisCount:
                               ResponsiveHelper.isTab(context) ? 2 : 1,
                         ),
-                  itemCount: 2,
+                  itemCount: 3,
                   padding: const EdgeInsets.symmetric(
                       horizontal: Dimensions.paddingSizeExtraSmall),
                   physics: const NeverScrollableScrollPhysics(),
