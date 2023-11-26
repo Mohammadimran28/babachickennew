@@ -6,7 +6,7 @@ class AppConstants {
   static const String appName = 'Baba Chicken';
   static const String appVersion = '10.0';
   static const AppMode appMode = AppMode.release;
-  static const String baseUrl = 'https://newadmin.babachicken.in';
+  static const String baseUrl = 'https://myadmin.munchick.com';
   static const String categoryUri = '/api/v1/categories';
   static const String bannerUri = '/api/v1/banners';
   static const String latestProductUri = '/api/v1/products/latest';
