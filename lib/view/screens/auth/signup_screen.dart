@@ -15,6 +15,7 @@ import 'package:flutter_restaurant/view/base/custom_text_field.dart';
 import 'package:flutter_restaurant/view/screens/auth/widget/code_picker_widget.dart';
 import 'package:flutter_restaurant/view/base/web_app_bar.dart';
 import 'package:flutter_restaurant/view/base/footer_view.dart';
+import 'package:flutter_restaurant/view/screens/auth/widget/social_login_widget.dart';
 import 'package:provider/provider.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -48,7 +49,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-
+    final configModel =
+        Provider.of<SplashProvider>(context, listen: false).configModel!;
+    final socialStatus = configModel.socialLoginStatus;
     return Scaffold(
       appBar: ResponsiveHelper.isDesktop(context)
           ? const PreferredSize(
@@ -118,7 +121,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                           height: MediaQuery.of(context)
                                                   .size
                                                   .height /
-                                              4.5),
+                                              5.4),
                                 ),
                               ),
                               const SizedBox(height: 20),
@@ -134,6 +137,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                             ColorResources.getGreyBunkerColor(
                                                 context)),
                               )),
+
                               const SizedBox(height: 35),
 
                               Provider.of<SplashProvider>(context,
@@ -362,6 +366,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                   ),
                                 ),
                               ),
+                              if (socialStatus!.isFacebook! ||
+                                  socialStatus.isGoogle!)
+                                const Center(child: SocialLoginWidget()),
                             ],
                           ),
                         ),

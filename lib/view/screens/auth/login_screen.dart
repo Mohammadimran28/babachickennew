@@ -124,7 +124,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 child: Image.asset(
                                   Images.logo,
                                   height:
-                                      MediaQuery.of(context).size.height / 4.5,
+                                      MediaQuery.of(context).size.height / 5.5,
                                   fit: BoxFit.scaleDown,
                                   matchTextDirection: true,
                                 ),
@@ -463,36 +463,36 @@ class _LoginScreenState extends State<LoginScreen> {
                                 socialStatus.isGoogle!)
                               const Center(child: SocialLoginWidget()),
 
-                            Center(
-                                child: Text(getTranslated('OR', context)!,
-                                    style:
-                                        poppinsRegular.copyWith(fontSize: 12))),
+                            // Center(
+                            //     child: Text(getTranslated('OR', context)!,
+                            //         style:
+                            //             poppinsRegular.copyWith(fontSize: 12))),
 
-                            Center(
-                              child: InkWell(
-                                onTap: () {
-                                  Navigator.pushReplacementNamed(context,
-                                      Routes.getDashboardRoute('home'));
-                                },
-                                child: RichText(
-                                    text: TextSpan(children: [
-                                  TextSpan(
-                                      text:
-                                          '${getTranslated('continue_as_a', context)} ',
-                                      style: poppinsRegular.copyWith(
-                                          fontSize: Dimensions.fontSizeSmall,
-                                          color: ColorResources.getHintColor(
-                                              context))),
-                                  TextSpan(
-                                      text: getTranslated('guest', context),
-                                      style: poppinsRegular.copyWith(
-                                          color: Theme.of(context)
-                                              .textTheme
-                                              .bodyLarge!
-                                              .color)),
-                                ])),
-                              ),
-                            ),
+                            // Center(
+                            //   child: InkWell(
+                            //     onTap: () {
+                            //       Navigator.pushReplacementNamed(context,
+                            //           Routes.getDashboardRoute('home'));
+                            //     },
+                            //     child: RichText(
+                            //         text: TextSpan(children: [
+                            //       TextSpan(
+                            //           text:
+                            //               '${getTranslated('continue_as_a', context)} ',
+                            //           style: poppinsRegular.copyWith(
+                            //               fontSize: Dimensions.fontSizeSmall,
+                            //               color: ColorResources.getHintColor(
+                            //                   context))),
+                            //       TextSpan(
+                            //           text: getTranslated('guest', context),
+                            //           style: poppinsRegular.copyWith(
+                            //               color: Theme.of(context)
+                            //                   .textTheme
+                            //                   .bodyLarge!
+                            //                   .color)),
+                            //     ])),
+                            //   ),
+                            // ),
                           ],
                         ),
                       ),

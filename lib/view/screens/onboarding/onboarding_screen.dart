@@ -37,8 +37,7 @@ class OnBoardingScreen extends StatelessWidget {
                                     child: TextButton(
                                         onPressed: () {
                                           Navigator.pushReplacementNamed(
-                                              context,
-                                              Routes.getWelcomeRoute());
+                                              context, Routes.getSignUpRoute());
                                         },
                                         child: Text(
                                           getTranslated('skip', context)!,
@@ -187,7 +186,7 @@ class OnBoardingScreen extends StatelessWidget {
                                           onTap: () {
                                             Navigator.pushReplacementNamed(
                                                 context,
-                                                Routes.getWelcomeRoute());
+                                                Routes.getSignUpRoute());
                                           },
                                         ))
                                     : const SizedBox.shrink()
