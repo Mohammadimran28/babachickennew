@@ -30,7 +30,7 @@ class BannerView extends StatelessWidget {
           child: TitleWidget(title: getTranslated('banner', context)),
         ),
         SizedBox(
-          height: 185,
+          height: 85,
           child: Consumer<BannerProvider>(
             builder: (context, banner, child) {
               return banner.bannerList != null
@@ -150,15 +150,15 @@ class BannerView extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(10),
                                       child: FadeInImage.assetNetwork(
                                         placeholder: Images.placeholderBanner,
-                                        width: 380,
-                                        height: 125,
+                                        width: 250,
+                                        height: 85,
                                         fit: BoxFit.cover,
                                         image:
                                             '${Provider.of<SplashProvider>(context, listen: false).baseUrls!.bannerImageUrl}/${banner.bannerList![index].image}',
                                         imageErrorBuilder: (c, o, s) =>
                                             Image.asset(
                                                 Images.placeholderBanner,
-                                                width: 350,
+                                                width: 250,
                                                 height: 85,
                                                 fit: BoxFit.cover),
                                       ),
