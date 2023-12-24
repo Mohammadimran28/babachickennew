@@ -628,11 +628,11 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
             ),
             const SizedBox(height: Dimensions.paddingSizeLarge),
 
-            Text(
-              '${getTranslated('street', context)} ${getTranslated('number', context)}',
-              style: poppinsRegular.copyWith(
-                  color: ColorResources.getHintColor(context)),
-            ),
+            // Text(
+            //   '${getTranslated('street', context)} ${getTranslated('number', context)}',
+            //   style: poppinsRegular.copyWith(
+            //       color: ColorResources.getHintColor(context)),
+            // ),
             const SizedBox(height: Dimensions.paddingSizeSmall),
 
             CustomTextField(
