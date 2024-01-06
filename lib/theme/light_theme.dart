@@ -6,7 +6,7 @@ ThemeData light = ThemeData(
   primaryColor: const Color(0xFFc30a10),
   secondaryHeaderColor: const Color(0xff285430),
   brightness: Brightness.light,
-  cardColor: Colors.white,
+  cardColor: Color.fromARGB(255, 246, 246, 246),
   focusColor: const Color(0xFFADC4C8),
   hintColor: const Color(0xFF52575C),
   shadowColor: Colors.grey[300],
